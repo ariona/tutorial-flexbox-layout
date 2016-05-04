@@ -1,0 +1,36 @@
+/* Style ini hanya untuk styling standar */
+*{margin:0;box-sizing:border-box}.container{background:#ecf0f1}.box{padding:30px;color:#fff;font-family:Poppins,"Helvetica Neue",arial,sans-serif;font-size:1.5em;text-shadow:0 1px 1px rgba(0,0,0,.2);text-align:center}.box1{background-color:#1dd0ad}.box2{background-color:#2fcc72}.box3{background-color:#3498db}.box4{background-color:#9b59b6}.box5{background-color:#34495e}.box6{background-color:#f1c40f}.box7{background-color:#e67e22}.box8{background-color:#e74c3c}.box9{background-color:#95a5a6}.box10{background-color:#7f8c8d}
+/* Style ini hanya untuk styling standar */
+
+
+/*
+    Style dibawah telah diberi prefix secara otomatis oleh
+    autoprefixer.
+
+    Disini, saya menggunakan autoprefixer online:
+    http://autoprefixer.github.io/
+*/
+.container{
+    height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+}
+
+.box{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 25%;
+        -ms-flex: 1 0 25%;
+            flex: 1 0 25%;
+}

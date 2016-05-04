@@ -1,0 +1,30 @@
+/* Style ini hanya untuk styling standar */
+*{margin:0;box-sizing:border-box}.container{background:#ecf0f1}.box{padding:30px;color:#fff;font-family:Poppins,"Helvetica Neue",arial,sans-serif;font-size:1.5em;text-shadow:0 1px 1px rgba(0,0,0,.2);text-align:center}.box1{background-color:#1dd0ad}.box2{background-color:#2fcc72}.box3{background-color:#3498db}.box4{background-color:#9b59b6}.box5{background-color:#34495e}.box6{background-color:#f1c40f}.box7{background-color:#e67e22}.box8{background-color:#e74c3c}.box9{background-color:#95a5a6}.box10{background-color:#7f8c8d}
+/* Style ini hanya untuk styling standar */
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+
+    /*
+    align-content akan meratakan item-item yang lebih dari satu barus
+    pada cross-axis. Ini bisa dibilang kebalikan dari justify-content
+    */
+    align-content: space-between;
+
+    /*
+    Coba juga value:
+    1. flex-start
+    2. flex-end
+    3. center
+    4. space-between
+    5. space-around
+    6. stretch
+    */
+}
+
+.box{
+    width: 200px;
+}

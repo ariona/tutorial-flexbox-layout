@@ -1,0 +1,39 @@
+/* Style ini hanya untuk styling standar */
+*{margin:0;box-sizing:border-box}.container{background:#ecf0f1}.box{padding:30px;color:#fff;font-family:Poppins,"Helvetica Neue",arial,sans-serif;font-size:1.5em;text-shadow:0 1px 1px rgba(0,0,0,.2);text-align:center}.box1{background-color:#1dd0ad}.box2{background-color:#2fcc72}.box3{background-color:#3498db}.box4{background-color:#9b59b6}.box5{background-color:#34495e}.box6{background-color:#f1c40f}.box7{background-color:#e67e22}.box8{background-color:#e74c3c}.box9{background-color:#95a5a6}.box10{background-color:#7f8c8d}
+/* Style ini hanya untuk styling standar */
+
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*
+    property order untuk mengatur urutan item.
+    Nilai bawaannya adalah 0: artinya item diurutkan
+    sesuai markup.
+
+    jika nilainya lebih besar, maka urutannya
+    sesuai angka. 1>0 maka 1 akan ada diakhir.
+    2 > 1 maka 2 berada setelah 1, dan seterusnya.
+
+    -1 lebih kecil dari 0, maka ditampilkan sebelum
+    item pertama (dari markup);
+
+    -5 lebih kecil dari -1, maka ditampilkan sebelum
+    item -1;
+*/
+.box1{
+    order: 1;
+}
+.box2{
+    order: 2;
+}
+.box10{
+    order: -1;
+}
+.box7{
+    order: -5;
+}
