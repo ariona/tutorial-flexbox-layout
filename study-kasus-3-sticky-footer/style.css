@@ -1,0 +1,51 @@
+*{ box-sizing: border-box }
+body{
+    font-family: "Josefin Sans";
+    margin: 0;
+
+    /* Atur Tinggi Minimal menjadi tinggi viewport/browser */
+    min-height: 100vh;
+
+    /* Jadiin Flex Container */
+    display: flex;
+
+    /* Atud direction menjadi column */
+    flex-direction: column;
+}
+
+header{
+    background-color:#ecf0f1;
+    border-bottom:2px solid #3f9edd;
+    padding: 15px 30px;
+    text-align: center;
+}
+header .logo{
+    margin-bottom: 20px;
+    display: block;
+}
+header nav a{
+    color: #444;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+main{
+    padding: 30px;
+    
+    /*
+    Atur Content, supaya menghabiskan sisa kosong
+    dari container. Yang efeknya membuat footer
+    tetap ada dibawah walau content main sedikit :)
+    */
+    flex: 1;
+
+}
+
+footer{
+    background-color: #3f9edd;
+    color: white;
+    text-align: center;
+}
+
+footer a{ color: white }

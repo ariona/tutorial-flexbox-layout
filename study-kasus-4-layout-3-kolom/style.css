@@ -1,0 +1,89 @@
+*{ box-sizing: border-box }
+body{
+    font-family: "Josefin Sans";
+    margin: 0;
+
+    /* Atur Tinggi Minimal menjadi tinggi viewport/browser */
+    min-height: 100vh;
+
+    /* Jadiin Flex Container */
+    display: flex;
+
+    /* Atud direction menjadi column */
+    flex-direction: column;
+}
+
+header{
+    background-color:#ecf0f1;
+    border-bottom:2px solid #3f9edd;
+    padding: 15px 30px;
+    text-align: center;
+}
+header .logo{
+    margin-bottom: 20px;
+    display: block;
+}
+header nav a{
+    color: #444;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+main{
+
+    /*
+    Atur Content, supaya menghabiskan sisa kosong
+    dari container. Yang efeknya membuat footer
+    tetap ada dibawah walau content main sedikit :)
+    */
+    flex: 1;
+
+    display: flex;
+}
+
+aside{
+    padding: 20px;
+
+    /* Atur Width awal dari sidebar */
+    flex-basis: 200px;
+    /*
+    Jika space tidak cukup, ukuran jangan berubah.
+    Tetap 200px/tidak mengalami pengurangan/shrink
+    */
+    flex-shrink: 0;
+}
+.sidebar-1{ background-color: #1abc9c }
+.sidebar-2{ background-color: #2ecc71 }
+
+article{
+    padding: 20px;
+
+    /* Isi space kosong */
+    flex-grow: 1;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px){
+
+    main{
+        /* Rubah Flex-direction menjadi Kolom */
+        flex-direction: column;
+    }
+    aside{
+        /* Atur flex basis menjadi auto */
+        flex-basis:auto;
+    }
+    /* Ubah posisi sidebar-1 menjadi dibawah konten */
+    .sidebar-1{order: 1}
+    /* Ubah posisi sidebar-2 menjadi dibawah sidebar 1 */
+    .sidebar-2{order: 2}
+}
+
+footer{
+    background-color: #3f9edd;
+    color: white;
+    text-align: center;
+}
+
+footer a{ color: white }

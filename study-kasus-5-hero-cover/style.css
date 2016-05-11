@@ -1,0 +1,60 @@
+*{ box-sizing: border-box}
+body{
+    font-family: "Josefin Sans";
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.7;
+}
+.hero{
+    /*
+    Atur agar hero memiliki tinggi sama dengan
+    viewport/browser
+    */
+    height: 100vh;
+    min-height: 640px;
+
+    /* Jadiin flex container */
+    display: flex;
+    /* Dengan direction Column */
+    flex-direction: column
+}
+.cover{
+    /*
+    Atur agar tingginya flexible memenuhi ruang
+    Kosong .hero
+    */
+    flex: 1;
+
+    /* Vertical Centering */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(http://unsplash.it/1200/800?random);
+    background-size: cover;
+}
+.cover h1{
+    margin: 0;
+    line-height: 1;
+}
+.cover a{ color: #3498db }
+
+.navigation{
+    text-align: center;
+    border-top: 2px solid #3498db;
+    border-bottom: 2px solid #3498db;
+    padding: 20px;
+}
+.navigation a{
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+article{
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px 0;
+}

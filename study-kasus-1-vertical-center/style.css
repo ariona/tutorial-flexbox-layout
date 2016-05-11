@@ -1,0 +1,25 @@
+body{
+
+    /*
+    Menentukan tinggi container,
+    dalam kasus ini body, menjadi 100vh alias sama dengan
+    tinggi viewport/browser.
+    */
+    height: 100vh;
+
+    font-family: "Josefin Sans";
+    font-weight: 700;
+
+    /* Jadiin flex container */
+    display: flex;
+
+    /* Rata tengah cross axis */
+    align-items: center;
+    
+    /* Rata tengah main axis */
+    justify-content: center;
+}
+
+.element{
+    text-align: center;
+}

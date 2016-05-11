@@ -1,0 +1,58 @@
+*{ box-sizing: border-box }
+body{
+    height: 100vh;
+
+    /* Vertical Centering */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling Standar buat input biar kece */
+input[type="text"],input[type="submit"]{
+    padding:15px;
+    font-family: "Josefin Sans";
+    font-size: 18px;
+}
+input[type="submit"]{
+    border: none;
+    background-color: rebeccapurple;
+    color: white;
+}
+
+
+
+.search-form{
+    width: 400px;
+
+    /* Jadiin flex container */
+    display: flex;
+}
+
+.search-form input[type="text"]{
+    /*
+    Agar input text menghabiskan sisa ruang
+    dari container alias memiliki width auto
+    */
+    flex: 1;
+}
+
+/*
+Kita tidak menambahkan flex-grow pada  input submit,
+agar widthnya menyesuaikan text yang ada didalamnya.
+*/
+
+
+
+/* Style Contoh Search Form tanpa flexbox/menggunakan percent */
+.search-form-percent{
+    width: 400px;
+}
+.search-form-percent input[type="text"]{
+    width: 80%;
+}
+.search-form-percent input[type="submit"]{
+    width: 20%;
+    /* Ketika text inputnya panjang/maka text akan terpoting */
+}
