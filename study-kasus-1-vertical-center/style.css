@@ -1,5 +1,5 @@
 body{
-
+    background-color:#ecf0f1;
     /*
     Menentukan tinggi container,
     dalam kasus ini body, menjadi 100vh alias sama dengan
@@ -15,7 +15,7 @@ body{
 
     /* Rata tengah cross axis */
     align-items: center;
-    
+
     /* Rata tengah main axis */
     justify-content: center;
 }
